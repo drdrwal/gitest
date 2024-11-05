@@ -1,11 +1,37 @@
+@font-face{
+    font-family: xband;
+    src: url(fonts/XBAND\ ROUGH.TTF)
+}
+
+
 h1{
     text-align: center;
     font-size: 44px;
+    font-family:xband ;
+    animation-name: rainbow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+
+@keyframes rainbow {
+    0% {color: rgb(255, 0, 0);}
+    25% {color: rgb(246, 255, 0);}
+    50% {color: rgb(0, 255, 64);}
+    75% {color: rgb(0, 89, 255);}
+    100% {color: rgb(255, 0, 0);}
 }
 
 body{
-    background-color: black;
+    background: rgba(0, 0, 0, 0.8) url(images/sparkles.gif);
+    background-blend-mode: darken;
+    
 }
+
 #podtext{
     color: rgb(255, 255, 255);
     background-color: rgb(39, 39, 39);
@@ -23,10 +49,11 @@ button{
     border-style:solid;
     border-radius: 0.5cm;
     text-align: center;
-    margin: 0 10%;
+    margin: 0 20%;
 
 }
-img{
+.horses img{
+    opacity:79%;
     background-color: rgb(153, 209, 115);
     border: 0.2cm;
     border-radius: 8px;
@@ -35,9 +62,20 @@ img{
     margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 350px;
+    height: 450px;
+    object-fit:cover;
     display: block;
     align-items: center;
+    transition: opacity 1s, width 0.5s;
+    
+}
+
+.horses img:hover{
+    opacity:100%;
+    transition-delay: 900ms;
+    transition: opacity 0.5s, width 0.5s;
+    width: 440px;
 }
 
 p{
@@ -51,10 +89,30 @@ p{
     font-size: 24px;
 }
 
+
 .bttn{
     margin-bottom: 10px;
     background-color: rgb(153, 209, 115);
     color: rgb(0, 0, 0);
     font-size: 40px;
     padding: 10px 20px;
+}
+
+#logo{
+    opacity: 100%;
+    text-align: center;
+    height: auto;
+    rotate: 0deg;
+    /* transition: rotate 1s; */
+}
+#logo:hover{
+    opacity: 100%;
+    text-align: center;
+    height: auto;
+    rotate:0deg;
+    /* transition: rotate 1s; */
+    animation-name: rotate;
+    animation-duration: 2s;
+    /* animation-fill-mode:both; */
+    
 }
