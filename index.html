@@ -4,15 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koniki</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- bleb -->
-    <img src="images/1.jpeg" height="240" width="360">
-    <p><h1><mark>Koniki</mark></h1></p>
-    <ol>
-        <li>1</li>
-        <li>2</li>
-    </ol>
-    <a href="pages/index.html" target="_blank" rel="noopener noreferrer">super Koniki</a>
+    <audio id="chime" src="sounds/chime.mp3"></audio>
+    
+    <script>
+        window.onload = function(){
+            document.getElementById("chime").play();
+        }
+    </script>
+    <audio id="sound" src="sounds/horse.mp3" preload="auto"></audio>
+    
+  
+    
+    <h1 style="font-size: 58px;">Koniki.com</h1>
+    <h3 id="podtext" style="text-align: center;">zbiór najlepszych koników</h3>
+    <div style="text-align: center;"><button class="bttn" onclick="document.getElementById('sound').play();"> Dzwięk Konia </button></div>
+    <div class="container">
+        <div>
+            <img src="images/1.jpeg" >
+                <p>bardzo durnowaty konik z miską na głowie</p>
+            <img src="images/2.JPG" >
+                <p>coś mu nie pasuje...</p>
+            <img src="images/3.JPG" >
+                <p>koń siedzący</p>
+            <img src="images/4.JPG" >
+                <p>wąs</p>
+            <img src="images/5.JPG" >
+                <p>yyy.....</p>
+            <img src="images/6.JPG" >
+                <p>co tam masz</p>
+            <img src="images/7.JPG" >
+                <p>w bieszczadach...</p>
+        </div>
+        <div class="subtext">
+
+        </div>
+    </div>
+    <h3>Zbiór koników dla wybrednych</h3>
+    <div>
+        <a href="pages/about.html" target="_blank" rel="noopener noreferrer" >
+            <button style="text-align: center;">o tej stronie</button>
+        </a>
+    </div>
 </body>
 </html>

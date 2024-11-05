@@ -1,0 +1,61 @@
+h1{
+    color: rgb(169, 255, 135);
+    text-align: center;
+    font-size: 44px;
+}
+
+body{
+    background-color: black;
+}
+#podtext{
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 39, 39);
+}
+
+button{
+    color: white; background-color: rgb(82, 82, 82);
+
+}
+
+.container{
+    background-color: rgb(153, 209, 115);
+    border: 0.2cm;
+    border-color: rgb(39, 39, 39);
+    border-style:solid;
+    border-radius: 0.5cm;
+    text-align: center;
+    margin: 0 10%;
+
+}
+img{
+    background-color: rgb(153, 209, 115);
+    border: 0.2cm;
+    border-radius: 8px;
+    border-style:solid;
+    border-color: rgb(93, 109, 77);
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: block;
+    align-items: center;
+}
+
+p{
+    font-family: 'Trebuchet MS', Bold;
+    font-weight: bold;
+    background-color: bisque;
+    border: 0.1cm;
+    border-radius: 40px;
+    border-style:solid;
+    border-color: rgb(137, 189, 103);
+    font-size: 24px;
+}
+
+.bttn{
+    margin-bottom: 10px;
+    background-color: rgb(153, 209, 115);
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding: 10px 20px;
+}
