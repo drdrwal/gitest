@@ -3,7 +3,6 @@
     src: url(fonts/XBAND\ ROUGH.TTF)
 }
 
-
 h1{
     text-align: center;
     font-size: 44px;
@@ -14,8 +13,8 @@ h1{
 }
 
 @keyframes rotate {
-    from {rotate: 0deg;}
-    to {rotate: 360deg;}
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
 }
 
 @keyframes rainbow {
@@ -29,17 +28,22 @@ h1{
 body{
     background: rgba(0, 0, 0, 0.8) url(images/sparkles.gif);
     background-blend-mode: darken;
-    
+    font-family: cursive;
 }
 
 #podtext{
     color: rgb(255, 255, 255);
     background-color: rgb(39, 39, 39);
+    font-family: cursive;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10px;
 }
 
 button{
     color: white; background-color: rgb(82, 82, 82);
-
+    font-family: cursive;
+    font-weight: 800;
 }
 
 .container{
@@ -55,31 +59,34 @@ button{
 .horses img{
     opacity:79%;
     background-color: rgb(153, 209, 115);
-    border: 0.2cm;
+    border: 0.1cm;
     border-radius: 8px;
     border-style:solid;
     border-color: rgb(93, 109, 77);
     margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
-    width: 350px;
-    height: 450px;
+    width: 40%;
+    height:30vmax;
     object-fit:cover;
     display: block;
     align-items: center;
-    transition: opacity 1s, width 0.5s;
+    transition: opacity 1s, width 0.5s, box-shadow 0.5s;
+    box-shadow:0 0 3px ;
     
 }
 
 .horses img:hover{
     opacity:100%;
     transition-delay: 900ms;
-    transition: opacity 0.5s, width 0.5s;
-    width: 440px;
+    transition: opacity 0.5s, width 0.5s, height 0.5s, box-shadow 0.5s;
+    width:60%;
+    box-shadow:0px 0px 20px;
+    
 }
 
 p{
-    font-family: 'Trebuchet MS', Bold;
+    font-family: cursive;
     font-weight: bold;
     background-color: bisque;
     border: 0.1cm;
@@ -98,23 +105,22 @@ p{
     padding: 10px 20px;
 }
 
+/* @keyframes logozoom{
+    from{size: 0%;}
+    to{size: 100%;}
+} */
+
 #logo{
     opacity: 100%;
     text-align: center;
-    rotate: 0deg;
-    /* animation-name: logozoom;
+    animation-name: rotate;
     animation-duration: 1s;
-    animation-fill-mode: forwards; */
-    /* transition: rotate 1s; */
+    animation-fill-mode: forwards;
+    transition: rotate 1s;
 }
 #logo:hover{
     opacity: 100%;
     text-align: center;
-    height: auto;
-    rotate:0deg;
-    /* transition: rotate 1s; */
-    animation-name: rotate;
-    animation-duration: 2s;
-    /* animation-fill-mode:both; */
+
     
 }
