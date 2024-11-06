@@ -112,7 +112,6 @@ p{
 
 #logo{
     opacity: 100%;
-    text-align: center;
     animation-name: rotate;
     animation-duration: 1s;
     animation-fill-mode: forwards;
