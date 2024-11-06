@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="logo">
-        <img src="./images/koń.png" alt="horse" style="width: 200px; height: auto;"> 
-    </div>
+    <img id="logo" src="./images/koń.png" alt="horse" > 
 
     <!-- bleb -->
     <audio id="chime" src="sounds/chime.mp3"></audio>
@@ -17,22 +15,23 @@
     <script>
         window.onload = function(){
             document.getElementById("chime").play();
+            chime.volume = 0.1
         }
     </script>
     <audio id="sound" src="sounds/horse.mp3" preload="auto"></audio>
     
-  
-    
     <h1 style="font-size: 58px;">Horses.com</h1>
     <h3 id="podtext" style="text-align: center;">compilation of the best horses</h3>
-    <div style="text-align: center;"><button class="bttn" onclick="document.getElementById('sound').play();"> Play Horse sound </button></div>
+    <div style="text-align: center;">
+        <button class="bttn" onclick="document.getElementById('sound').play();"> Play Horse sound </button>
+    </div>
     <div class="container">
         <div class="horses">
             <img src="images/1.jpeg" onclick="document.getElementById('sound').play();">
                 <p>very silly horse with a bowl on its head</p>
             <img src="images/2.JPG" >
                 <p>something's not right...</p>
-            <img src="images/3.JPG" >
+            <img src="images/3.JPG" style="object-position:0% 40%";>
                 <p>a horse sitting</p>
             <img src="images/4.JPG" style="object-position:0% 40%"; >
                 <p>moustache</p>
@@ -43,11 +42,9 @@
             <img src="images/7.JPG" >
                 <p>furry horse...</p>
         </div>
-        <div class="subtext">
 
-        </div>
     </div>
-    <h3>Horse compilation for those who need it</h3>
+    <h3>Horse compilation for <span style="font-weight: 800;">those who need it </span></h3>
     <div>
         <a href="pages/about.html" target="_blank" rel="noopener noreferrer" >
             <button style="text-align: center;">About this page</button>
